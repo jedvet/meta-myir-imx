@@ -65,5 +65,5 @@ PREFERRED_VERSION_optee-os-tadevkit:mx9-nxp-bsp   ??= "4.0.0.imx"
 PREFERRED_VERSION_opencv:mx8-nxp-bsp ??= "4.7.0.imx"
 PREFERRED_VERSION_opencv:mx9-nxp-bsp ??= "4.7.0.imx"
 
-SOC_DEFAULT_IMAGE_FSTYPES = "wic.bmap wic.zst tar.zst"
+SOC_DEFAULT_IMAGE_FSTYPES = "wic.bmap wic.zst tar.zst ext4"
 ZSTD_COMPRESSION_LEVEL ?= "-10"

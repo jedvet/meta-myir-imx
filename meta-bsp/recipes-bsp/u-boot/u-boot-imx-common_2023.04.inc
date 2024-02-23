@@ -3,11 +3,12 @@ DESCRIPTION = "i.MX U-Boot suppporting i.MX reference boards."
 LICENSE = "GPL-2.0-or-later"
 LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
-UBOOT_SRC ?= "git://github.com/nxp-imx/uboot-imx.git;protocol=https"
+UBOOT_SRC ?= "git:////home/myir/MYD-LMX9X-yocto/bsp/myir-imx-uboot;protocol=file"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
 SRCBRANCH = "lf_v2023.04"
 LOCALVERSION ?= "-${SRCBRANCH}"
-SRCREV = "49b102d98881fc28af6e0a8af5ea2186c1d90a5f"
+SRCREV = "c2f0b212ad1bd963db69d379d0bfa0aa15900fb9"
+
 
 DEPENDS += " \
     bc-native \
