@@ -50,10 +50,8 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     ${V2X_PKGS} \
     ${DOCKER} \
     ${G2D_SAMPLES} \
-    wifi-bt-conf \
+    auto-wifi \
     autorun-script \
-    myir-regulatory \
-    genext2fs \
     tslib \
     tslib-calibrate \
     tslib-conf \
@@ -69,5 +67,5 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     pv \
     ppp-quectel \
     quectel-cm \
-    tf-upgrade \
+    ppp  \
 "

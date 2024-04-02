@@ -4,7 +4,7 @@ After=getty@tty1.service
 
 [Service]
 Type=forking
-ExecStart=/etc/start_service.sh
+ExecStart=/etc/init.d/startup.sh
 TimeoutSec=0
 
 [Install]

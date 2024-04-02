@@ -8,6 +8,8 @@ inherit populate_sdk_qt6
 
 CONFLICT_DISTRO_FEATURES = "directfb"
 
+DEFAULT_IMAGE_LINGUAS:libc-glibc += "zh-cn"
+
 IMAGE_INSTALL += " \
     curl \
     packagegroup-imx-ml \
@@ -30,15 +32,29 @@ IMAGE_INSTALL_PARSEC = " \
     swtpm \
     softhsm \
     os-release \
-    autorun-script  \
     auto-wifi  \
-    fac-burn-emmc-full  \
+    htpdate  \
     hmi  \
     ppp-quectel  \
     start-service  \
-    tf-upgrade  \
     vim  \
+    quectel-cm  \
+    ppp  \
     qtbase  \
     qtmultimedia \
     qtvirtualkeyboard \
+    wireless-tools \
+    pv \
+    devmem2 \
+    v4l-utils \
+    tslib \
+    tslib-calibrate \
+    tslib-conf \
+    tslib-uinput \
+    tslib-tests \
+    tcpdump \
+    openvpn \
+    proftpd \
+    cinematicexperience-rhi  \
+    imx-g2d  \
     ${@bb.utils.contains('MACHINE_FEATURES', 'optee', 'optee-client optee-os', '', d)}"
