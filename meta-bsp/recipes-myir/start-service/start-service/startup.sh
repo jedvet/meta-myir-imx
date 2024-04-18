@@ -15,6 +15,8 @@ else
 	echo "Lines already commented out."
 fi
 
+ifconfig eth1 192.168.1.2
+
 echo "Start Up"
 
 exit 0

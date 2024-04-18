@@ -1,0 +1,32 @@
+{
+   "scheme": "老化测试",
+   "author": "xmr",
+   "version": "V0.2",
+   "datetime": "2022-08-29 11:40:00",
+   "describe": "包含MCC-Y6ULM-EVC和MY-EVC3000S-V4的上电自检测试, 默认自检页面",
+   "mainpage": "AGING",
+   "AGING": [
+      {
+         "PN": "RUISA",
+         "U-Boot": "U-Boot 2020.01-stm32mp-r1",
+         "Kernel": "Starting kernel ...",
+         "FileSys": "Freeing initrd memory: 3548K",
+         "Login": "myir-ya157c-t login: root (automatic login)",
+         "Login-Account": "root",
+         "Login-Password": "",
+         "AgingTest-Procedure": "MEasyTest-DEV",
+         "AgingTest-Profile": "agingconfig.json"
+      },
+      {
+         "PN": "MYC-YA151C-4E512D-65-I-T",
+         "U-Boot": "U-Boot 2020.01-stm32mp-r1",
+         "Kernel": "Starting kernel ...",
+         "FileSys": "Freeing unused kernel memory: 1024K",
+         "Login": "myir-ya151c-t-4e512d login: root (automatic login)",
+         "Login-Account": "root",
+         "Login-Password": "",
+         "AgingTest-Procedure": "MEasyTest-DEV",
+         "AgingTest-Profile": "agingconfig.json"
+      }
+   ]
+}

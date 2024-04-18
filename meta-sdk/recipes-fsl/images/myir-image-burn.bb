@@ -31,6 +31,7 @@ IMAGE_INSTALL += " \
     fac-burn-emmc-full \
     ${@bb.utils.contains('MACHINENAME', 'myd-lmx9x', 'tf-upgrade', '', d)} \
     ${DOCKER} \
+    board-info \
 "
 
 

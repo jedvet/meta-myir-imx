@@ -24,6 +24,9 @@ IMAGE_FEATURES += " \
     tools-debug \
     ssh-server-openssh \
     hwcodecs \
+${@bb.utils.contains('DISTRO_FEATURES', 'wayland', 'weston', \
+       bb.utils.contains('DISTRO_FEATURES',     'x11', 'x11-base x11-sato', \
+                                                       '', d), d)} \
 "
 
 V2X_PKGS = ""
@@ -38,12 +41,6 @@ G2D_SAMPLES:mx93-nxp-bsp = "imx-g2d-samples"
 
 CORE_IMAGE_EXTRA_INSTALL += " \
     packagegroup-core-full-cmdline \
-    packagegroup-tools-bluetooth \
-    packagegroup-fsl-tools-audio \
-    packagegroup-fsl-tools-gpu \
-    packagegroup-fsl-tools-gpu-external \
-    packagegroup-fsl-tools-testapps \
-    packagegroup-fsl-tools-benchmark \
     packagegroup-imx-isp \
     packagegroup-imx-security \
     firmwared \
@@ -68,4 +65,18 @@ CORE_IMAGE_EXTRA_INSTALL += " \
     ppp-quectel \
     quectel-cm \
     ppp  \
+    u-boot-imx-fw-utils \
+    board-info \
+    swupdate \
+    swupdate-usb \
+    swupdate-progress \
+    log4cpp \
+    start-service  \
+    myir-utils  \
+    devmem2  \
+    sqlite3  \
+    readline \
+    tftp-hpa  \
+    packagegroup-imx-core-tools  \
+${@bb.utils.contains('DISTRO_FEATURES', 'x11 wayland', 'weston-xwayland xterm', '', d)} \
 "

@@ -56,5 +56,15 @@ IMAGE_INSTALL_PARSEC = " \
     openvpn \
     proftpd \
     cinematicexperience-rhi  \
-    imx-g2d  \
+    u-boot-imx-fw-utils \
+    board-info \
+    swupdate \
+    swupdate-usb \
+    swupdate-progress \
+    log4cpp \
+    devmem2 \
+    sqlite3  \
+    readline  \
+    tftp-hpa  \
+    myir-utils \
     ${@bb.utils.contains('MACHINE_FEATURES', 'optee', 'optee-client optee-os', '', d)}"

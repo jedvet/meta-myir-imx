@@ -1,0 +1,11 @@
+[Unit]
+Description=auto run hmi after psplash-quit service
+After=weston.service myir-swupdate.service swupdate.service
+
+[Service]
+Type=oneshot
+ExecStart=/home/root/measy.sh
+
+
+[Install]
+WantedBy=multi-user.target

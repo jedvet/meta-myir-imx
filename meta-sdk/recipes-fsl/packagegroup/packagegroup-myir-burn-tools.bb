@@ -31,8 +31,6 @@ RDEPENDS:${PN} = " \
     memtester \
     minicom \
     mmc-utils \
-    mtd-utils \
-    mtd-utils-ubifs \
     nano \
     parted \
     pipewire \

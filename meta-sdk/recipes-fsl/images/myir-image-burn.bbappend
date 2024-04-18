@@ -10,9 +10,9 @@ install_upgrade_info() {
 			echo " " > ${IMAGE_ROOTFS}${systemd_system_unitdir}/check_upgrade.service
 		fi
 
-		if [ -f ${IMAGE_ROOTFS}/home/root/burn_emmc.sh ];then
-			echo "reboot" >> ${IMAGE_ROOTFS}/home/root/burn_emmc.sh
-		fi 
+#		if [ -f ${IMAGE_ROOTFS}/home/root/burn_emmc.sh ];then
+#			echo "reboot" >> ${IMAGE_ROOTFS}/home/root/burn_emmc.sh
+#		fi 
 
 
 }

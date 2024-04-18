@@ -19,12 +19,16 @@ DEPENDS += "lzop-native bc-native"
 
 SRC_URI = "${KERNEL_SRC}"
 #KERNEL_SRC ?= "git://github.com/nxp-imx/linux-imx.git;protocol=https;branch=${SRCBRANCH}"
-KERNEL_SRC ?= "git:///home/myir/MYD-LMX9X-yocto/bsp/myir-imx-linux;protocol=file;branch=${SRCBRANCH}"
+#KERNEL_SRC ?= "git:///home/myir/MYD-LMX9X-yocto/bsp/myir-imx-linux;protocol=file;branch=${SRCBRANCH}"
+KERNEL_SRC ?= "git:///home/myir/MYD-LMX9X-yocto/bsp_new/myir-imx-linux;protocol=file;branch=${SRCBRANCH}"
 KBRANCH = "${SRCBRANCH}"
-SRCBRANCH = "93x-6.1.55"
+#SRCBRANCH = "Develop-L6.1"
+SRCBRANCH = "feature"
 LOCALVERSION = "-lts-next"
 #SRCREV = "770c5fe2c1d1529fae21b7043911cd50c6cf087e"
-SRCREV = "e5bf24c62f779331a6e43bc6771b341e793ad70b"
+#SRCREV = "df34d78262d65bb91303926c0f021594cf3ffbb0"
+#SRCREV = "4d1e660578648a1ae87bb802388fa83f1103dd01"
+SRCREV = "a5c552ce62100754967cca523a7f6f7eacbd944f"
 
 # PV is defined in the base in linux-imx.inc file and uses the LINUX_VERSION definition
 # required by kernel-yocto.bbclass.

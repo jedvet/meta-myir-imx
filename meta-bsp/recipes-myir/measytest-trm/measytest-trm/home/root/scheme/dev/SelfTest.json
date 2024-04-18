@@ -1,0 +1,49 @@
+{
+   "scheme": "通断电测试",
+   "describe": "上电自检测试, 默认自检页面",
+   "mainpage": "POST",
+   "POST": [
+      {
+         "Count": 10
+      },
+      {
+         "PN": "RUISA",
+         "Power-On-Time":55,
+         "Power-Off-Time":2,
+         "U-Boot": "U-Boot 2021.10 ",
+         "Kernel": "Starting kernel ...",
+         "FileSys": "VFS: Disk quotas dquot_6.6.0",
+         "Login": "smarc-rzg2l login: root (automatic login)",
+         "Login-Account": "root",
+         "Login-Password": "",
+         "SelfTest-Procedure": "MEasyTest-DEV",
+         "SelfTest-Profile": "postconfig.json"
+      },
+	  {
+         "PN": "MYC-YA151C-4E512D-65-I-T",
+         "Power-On-Time":55,
+         "Power-Off-Time":2,
+         "U-Boot": "U-Boot 2020.01-stm32mp-r1",
+         "Kernel": "Starting kernel ...",
+         "FileSys": "Freeing unused kernel memory: 1024K",
+         "Login": "myir-ya151c-t-4e512d login: root (automatic login)",
+         "Login-Account": "root",
+         "Login-Password": "",
+         "SelfTest-Procedure": "MEasyTest-DEV",
+         "SelfTest-Profile": "postconfig.json"
+      },
+      {
+         "PN": "MYT-Y6ULX-IO",
+         "Power-On-Time":55,
+         "Power-Off-Time":2,
+         "U-Boot": "U-Boot 2016.03-ga6fa844 ",
+         "Kernel": "Starting kernel ...",
+         "FileSys": "Freeing unused kernel memory: 424K",
+         "Login": "myd-y6ull14x14 login: ",
+         "Login-Account": "root",
+         "Login-Password": "",
+         "SelfTest-Procedure": "MEasyTest-DEV",
+         "SelfTest-Profile": "postconfig.json"
+      }
+   ]
+}

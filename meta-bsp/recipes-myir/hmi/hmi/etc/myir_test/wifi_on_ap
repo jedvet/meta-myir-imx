@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 ETH=eth0
-WLAN=uap0
+WLAN=wlan0
 WLAN_IP=192.168.10.1
 DHCP_FILE=/etc/myir_udhcpd.conf
 HOSTAPD_FILE=/etc/myir_hostapd.conf

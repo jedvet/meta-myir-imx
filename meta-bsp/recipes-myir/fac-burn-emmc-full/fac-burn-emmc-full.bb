@@ -11,6 +11,7 @@ S = "${WORKDIR}"
 SRC_URI = "file://home/root/burn_emmc.sh \
 	   file://fac-burn-emmc.service \
            file://licenses/GPL-2 \
+	   file://home/root/burn_emmc_dual.sh  \
           "
 
 do_install(){
@@ -21,7 +22,11 @@ do_install(){
 
 	install -m 755 ${WORKDIR}/fac-burn-emmc.service ${D}${systemd_system_unitdir}/fac-burn-emmc.service
 
-	install -m 755 ${WORKDIR}/home/root/burn_emmc.sh ${D}/home/root/burn_emmc.sh
+       if [ ${DUAL_ROOTFS} -eq 1 ];then
+               install -m 755 ${WORKDIR}/home/root/burn_emmc_dual.sh ${D}/home/root/burn_emmc.sh
+       else
+               install -m 755 ${WORKDIR}/home/root/burn_emmc.sh ${D}/home/root/burn_emmc.sh
+       fi
 	install -m 755 ${DEPLOY_DIR_IMAGE}/imx-boot ${D}/home/root/mfgimage/imx-boot
 
 	for i in ${IMAGE_BOOT_FILES};do

@@ -29,3 +29,5 @@ do_install:append() {
         sed -i -e "/^\[core\]/a #gbm-format=${GBM_FORMAT_VALUE}" ${D}${sysconfdir}/xdg/weston/weston.ini
     fi
 }
+
+SYSTEMD_AUTO_ENABLE = "disable"

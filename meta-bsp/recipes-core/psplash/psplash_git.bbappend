@@ -4,6 +4,7 @@ SRC_URI += " \
     file://psplash-basic.service \
     file://psplash-network.service \
     file://psplash-quit.service \
+    file://0001-FEAT-Support-myir-logo.patch  \
 "
 SYSTEMD_SERVICE:${PN} += "${@bb.utils.contains('DISTRO_FEATURES', 'systemd', ' psplash-basic.service psplash-network.service psplash-quit.service', '', d)}"
 
