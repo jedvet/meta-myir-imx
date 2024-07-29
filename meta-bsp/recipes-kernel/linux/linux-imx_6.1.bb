@@ -18,16 +18,10 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 DEPENDS += "lzop-native bc-native"
 
 SRC_URI = "${KERNEL_SRC}"
-#KERNEL_SRC ?= "git://github.com/nxp-imx/linux-imx.git;protocol=https;branch=${SRCBRANCH}"
-#KERNEL_SRC ?= "git:///home/myir/MYD-LMX9X-yocto/bsp/myir-imx-linux;protocol=file;branch=${SRCBRANCH}"
-KERNEL_SRC ?= "git:///home/myir/MYD-LMX9X-yocto/bsp_new/myir-imx-linux;protocol=file;branch=${SRCBRANCH}"
+KERNEL_SRC ?= "git://github.com/MYiR-Dev/myir-imx-linux.git;protocol=https;branch=${SRCBRANCH}"
 KBRANCH = "${SRCBRANCH}"
-#SRCBRANCH = "Develop-L6.1"
-SRCBRANCH = "feature"
+SRCBRANCH = "develop_6.1.55"
 LOCALVERSION = "-lts-next"
-#SRCREV = "770c5fe2c1d1529fae21b7043911cd50c6cf087e"
-#SRCREV = "df34d78262d65bb91303926c0f021594cf3ffbb0"
-#SRCREV = "4d1e660578648a1ae87bb802388fa83f1103dd01"
 SRCREV = "a5c552ce62100754967cca523a7f6f7eacbd944f"
 
 # PV is defined in the base in linux-imx.inc file and uses the LINUX_VERSION definition
