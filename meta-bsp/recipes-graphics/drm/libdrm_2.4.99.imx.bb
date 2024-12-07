@@ -6,3 +6,7 @@ LIC_FILES_CHKSUM = "file://xf86drm.c;beginline=9;endline=32;md5=c8a3b961af7667c5
 IMX_LIBDRM_BRANCH = "libdrm-imx-2.4.99"
 SRC_URI_remove = "file://installtests.patch"
 SRCREV = "f421c9c8c4b8fe48d9e6ef43910e98569c94a4b2"
+
+IMX_LIBDRM_SRC_remove = "git://source.codeaurora.org/external/imx/libdrm-imx.git;protocol=https;nobranch=1"
+IMX_LIBDRM_SRC_prepend = "git://github.com/nxp-imx/libdrm-imx.git;protocol=https;nobranch=1"
+
